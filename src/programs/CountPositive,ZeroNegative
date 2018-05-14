@@ -1,0 +1,36 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc= new Scanner(System.in);
+	    System.out.println("Enter Number of Elements for Array");
+	    int n = sc.nextInt();
+	    int countn=0;
+	    int countp=0;
+	    int countz=0;
+	    int i;
+	    System.out.println("Enter Elements for Array");
+	    int [] A = new int[n];
+	    for(i=0;i<n;i++){
+	        A[i]=sc.nextInt();
+	    }
+	    for(i=0;i<n;i++){
+	    if(A[i]>0){
+	        countp++;
+	    }
+	    else if (A[i]<0){
+	        countn++;
+	    }
+	    else{
+	        countz++;
+	    }
+	    }
+	    
+	    System.out.println("The NUmber of Positive Integers are "+countp);
+	    System.out.println("The NUmber of Positive Integers are "+countn);
+	    System.out.println("The NUmber of Positive Integers are "+countz);
+		
+	}
+}
