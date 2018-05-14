@@ -1,0 +1,32 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc= new Scanner(System.in);
+	    System.out.println("Enter the Number for Fibannaci Series Geeneration");
+	    int limit =sc.nextInt();
+	    
+	    int a=0;
+	    int b=1;
+	    System.out.print(+a+","+b+",");
+	    int c= a+b;
+	    limit = limit-2;
+	    
+	    while(limit>0){
+	        
+	        a=b;
+	        b=c;
+	        c=a+b;
+	        limit--;
+	        
+	    
+	   
+	    System.out.print(c+",");
+	  
+	   
+		
+	}
+}
+}
