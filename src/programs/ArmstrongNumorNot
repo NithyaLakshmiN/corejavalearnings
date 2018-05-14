@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Main
+{
+	public static void main(String[] args) {
+	   Scanner sc= new Scanner(System.in);
+	   System.out.println("Enter Number to find whether it is Amstrong");
+	   int n = sc.nextInt();
+	   int num =n;
+	   
+	   int arm =0;
+	   while(n>0){
+	   
+	   int m =n%10;
+	   n=n/10;
+	   arm =arm+m*m*m;
+	   }
+	   if(num==arm){
+	   System.out.println("This is Armstrong Number");
+	   }
+	    else{
+	   System.out.println("This is not Armstrong Number");
+	   }
+	   
+}
+}
