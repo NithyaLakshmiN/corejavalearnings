@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc= new Scanner(System.in);
+	    System.out.println("Enter for How Many Elements the Factorial has to be Found");
+	    int n =sc.nextInt();
+	    int fact=1;
+	    
+	    for(int i=1;i<n;i++){
+	        fact =i*fact;
+	    }
+	    
+	    System.out.println("The Factorial for given Number is"+fact);
+	  
+	   
+		
+	}
+}
