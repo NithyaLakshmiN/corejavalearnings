@@ -1,0 +1,10 @@
+public class Main
+{
+	public static void main(String[] args) {
+		String str ="Nithya";
+	     String str2 =str.replaceAll("[aeiouAEIOU]","");	
+	     System.out.println("After Vowel Removal " +str2);
+	
+		
+	}
+}
