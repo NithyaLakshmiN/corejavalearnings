@@ -1,0 +1,22 @@
+//StringBuffer is a peer class of String 
+//that provides much of the functionality of strings. 
+   //String represents fixed-length, immutable character sequences while StringBuffer represents growable and writable character sequences.
+
+//StringBuffer may have characters and substrings 
+     // inserted in the middle or appended to the end. 
+     // It will automatically grow to make room for such 
+     // additions and often has more characters preallocated 
+     // than are actually needed, to allow room for growth.
+
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		String str1 ="Nithya Lakshmi";
+		
+		StringBuffer sb = new StringBuffer(str1);
+		System.out.println("The Copied String is " +sb);
+		
+	}
+}
