@@ -1,0 +1,47 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	    System.out.println("Enter Number of Elements for Arrays");
+	    int n = sc.nextInt();
+	    int i,j;
+	    int count=0;
+	    int [] A = new int [50];
+	    System.out.println("Enter Elements for Arrays");
+	    for(i=0;i<n;i++){
+	        A[i]= sc.nextInt();
+	    }
+	    
+	    System.out.println("Enter the Element to be Deleted from Array");
+	    int del = sc.nextInt();
+	    
+	    for(i=0;i<n;i++){
+	        
+	        if(A[i]==del){
+	            for (j=i;j<=n-1;j++){
+	                A[j]=A[j+1];
+	            }
+	            
+	            count++;
+	            break;
+	            
+	        }
+	    }
+	    if (count==0){
+	        System.out.println("Element Not Found");
+	    }
+	        
+	        
+	    else
+       {
+           System.out.print("Element Deleted Successfully..!!");
+           System.out.print("\nNow the New Array is :\n");
+           for(i=0; i<(n-1); i++)
+           {
+               System.out.print(A[i]+ " ");
+           }
+       }
+   }
+}
