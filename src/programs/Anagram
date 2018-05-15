@@ -1,0 +1,50 @@
+import java.util.*;
+
+
+public class Anagrams
+{
+
+  public static void main (String[]args)
+  {
+
+    Scanner sc = new Scanner (System.in);
+    System.out.println ("Enter String1");
+    String str1 =sc.nextLine();
+     
+    System.out.println ("Enter String2");
+    String str2 =sc.nextLine(); 
+     
+    int l1 = str1.length();
+    int l2 = str2.length();
+     
+     
+     
+     if(l1==l2){
+        char[] charstr1 =str1.toCharArray();
+        char[] charstr2 =str2.toCharArray();
+        
+      Arrays.sort(charstr1);
+      Arrays.sort(charstr2); 
+        
+        if (Arrays.equals(charstr1,charstr2)==true){
+        System.out.println ("The Entered Strings are Anagrams");    
+           }
+          
+            
+        
+        else{
+              
+            System.out.println ("The Entered Strings are not Anagrams");    
+           }
+        
+        
+        
+  }
+
+
+}
+
+}
+
+
+      
