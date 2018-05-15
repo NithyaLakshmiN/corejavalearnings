@@ -1,0 +1,16 @@
+public class Main
+{
+	public static void main(String[] args) {
+		String str ="Nithya";
+		
+		StringBuffer sb = new StringBuffer();
+		int i = str.length();
+      int j;
+		
+		for (j=i-1;j>0;j--){
+		    sb=sb.append(str.charAt(j));
+		}
+		System.out.println("The Reversed String is" +sb);
+		
+	}
+}
