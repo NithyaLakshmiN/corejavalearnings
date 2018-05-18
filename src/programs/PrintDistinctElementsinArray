@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+
+public class nithya{
+  public static void main (String[] args){
+    
+ Scanner sc= new Scanner(System.in);
+ System.out.println("Enter Number of Elements for Array");
+ int n=sc.nextInt();
+    int i;
+    
+ System.out.println("Enter Elements for Array");
+    int [] A = new int[n];
+    for(i=0;i<n;i++){
+      A[i]=sc.nextInt();
+    }
+    
+    System.out.print("The Distinct Elements are:");
+    for(i=0;i<n;i++){
+      int j;
+      for(j=0;j<i;j++){
+        if(A[i]==A[j]){
+          break;
+        }
+      }
+    
+   
+    if(i==j){
+      System.out.println(A[i]+" ");
+      
+    }
+    
+    }
+  }
+ 
+ }
