@@ -1,0 +1,68 @@
+import java.io.*;
+import java.util.*;
+
+public class nithya{
+  public static void main (String[] args){
+    
+    try{
+      
+      File file = new File("D:\\test.txt");
+      FileWriter fileWriter = new FileWriter(file);
+      BufferedWriter Bufferedwriter = new BufferedWriter(fileWriter);
+      
+      System.out.println("Enter the Number of lines to be Added to File");
+      Scanner sc = new Scanner(System.in);
+      int len =sc.nextInt();
+      String line=null;
+      int i;
+      
+      System.out.println("Now Adding Mentioned Lines to File");
+      for(i=0;i<len+1;i++){
+         Bufferedwriter.write(line);
+        Bufferedwriter.newLine();
+         }
+      Bufferedwriter.close();
+      
+      }      
+   catch(Exception e){
+   e.printStackTrace();
+ }
+  }
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
