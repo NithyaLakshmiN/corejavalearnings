@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+
+public class nithya{
+  public static void main (String[] args){
+    int i,j;
+    
+ Scanner sc= new Scanner(System.in);
+ System.out.println("Enter Number of Elements for Array");
+ int n=sc.nextInt();
+    
+    
+    System.out.println("Enter Elements for Array A");
+    int [] A = new int[n];
+   for(i=0;i<n;i++){
+      A[i]=sc.nextInt();
+    }
+    
+    
+    System.out.println("Enter Elements for Array B");
+    int [] B = new int[n];
+    for(j=0;j<n;j++){
+      B[j]=sc.nextInt();
+    }
+ 
+    System.out.println("Now the Common Elements from Both the Arrays are:");
+    
+     for(i=0;i<n;i++){
+        for(j=0;j<n;j++){
+          if (A[i]==B[j]){
+            System.out.println(A[i]+" ");
+          }
+   
+   
+  }
+ 
+ }
+  }
+}
