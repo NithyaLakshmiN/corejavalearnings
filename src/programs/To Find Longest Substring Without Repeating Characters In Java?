@@ -1,6 +1,6 @@
 import java.util.LinkedHashMap;
  
-public class MainClass 
+public class nithya 
 {  
     static void longestSubstring(String inputString)
     {
@@ -53,16 +53,16 @@ public class MainClass
         System.out.println("Input String : "+inputString);
          
         System.out.println("The longest substring : "+longestSubstring);
+      
+      System.out.println("The longest Substring Length : "+longestSubstringLength);
          
-        System.out.println("The longest Substring Length : "+longestSubstringLength);
+        
     }
      
     public static void main(String[] args) 
     {    
         longestSubstring("javaconceptoftheday");
          
-        System.out.println("==========================");
-         
-        longestSubstring("thelongestsubstring");
+        
     }    
 }
